@@ -15,7 +15,7 @@ int main(){
         }
         for (int j = 0; j < 5; j++){
             music.push_back(0); //노래가 재생되지 않는 동안은 0을 벡터에 삽입
-        }
+        } 
     }
 
     while (1){
