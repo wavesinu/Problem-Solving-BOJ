@@ -12,6 +12,7 @@ int main(){
         num.push_back(x);
     }
     sort(num.begin(), num.end());
+    
     for (int i = 0; i < num.size(); i++){
         cout << num[i] << " ";
     }
