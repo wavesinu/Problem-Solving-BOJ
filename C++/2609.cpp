@@ -1,28 +1,17 @@
 #include <iostream>
 using namespace std;
 
-int getGCD(int n1, int n2)
-{
-    int tmp, N;
-
-    if (n1 < n2)
-    {
-        tmp = n1;
-        n1 = n2;
-        n2 = tmp;
-    }
-
-    while (n2 != 0)
-    {
-        N = n1 % n2;
-        n1 = n2;
-        n2 = N;
-    }
-    return n1;
+int getGCD(int a, int b){
+    if (b == 0)
+        return a;
+    else
+        return getGCD(b, a % b);
 }
 
-int main()
-{
+int main(){
     int a, b;
     cin >> a >> b;
+
+    cout << getGCD(a, b) << endl;
+    cout << a * b / getGCD(a, b) << endl;
 }
