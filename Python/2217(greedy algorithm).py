@@ -2,7 +2,7 @@ import sys
 
 if __name__ == "__main__":
     N = int(input())
-    rope = [int(sys.stdin.readline()) for _ in range(N)]
+    rope = [int(sys.stdin.readline()) for i in range(N)]
     rope.sort(reverse=True)
 
     result = 0
@@ -14,4 +14,3 @@ if __name__ == "__main__":
             result = tmp
 
     print(result)
-    print(len(rope))
